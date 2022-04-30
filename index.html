@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Scorekeeper</h1>
+    </header>
+    <section>
+      <div class="container1">
+        <h2 class="homeScore">0</h2>
+        <p id="home">Home</p>
+      </div>
+
+      <div class="button">
+        <button class="plusone" onclick="plusone()">+1</button>
+        <button class="plustwo" onclick="plustwo()">+2</button>
+        <button class="plusthree" onclick="plusthree()">+3</button>
+      </div>
+    </section>
+    <section>
+      <div class="container2">
+        <h2 class="awayScore">0</h2>
+        <p id="away">Away</p>
+      </div>
+      <div class="button">
+        <button class="plusone" onclick="plusoneAway()">+1</button>
+        <button class="plustwo" onclick="plustwoAway()">+2</button>
+        <button class="plusthree" onclick="plusthreeAway()">+3</button>
+      </div>
+    </section>
+    <button class="default" id="reset" onclick="reset()">Reset</button>
+    <button class="default" id="myBtn">New Names</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form>
+          <label for="HomeName">Home Name: </label>
+          <input
+            type="text"
+            id="HomeName"
+            name="HomeName"
+            placeholder="New Name for Team Home"
+          /><br /><br />
+          <label for="AwayName">Away Name: </label>
+          <input
+            type="text"
+            id="AwayName"
+            name="AwayName"
+            placeholder="New Name for Team Away"
+          /><br /><br />
+        </form>
+        <button class="default" onclick="change()" id="save">Save</button>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

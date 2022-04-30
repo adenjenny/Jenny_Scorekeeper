@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Orbitron&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===============Main Styling ============== */
+body {
+  background-color: #2c2c2c;
+  font-family: "Orbitron", sans-serif;
+}
+
+h1 {
+  color: #fdf860;
+  font-size: 5rem;
+  text-align: center;
+}
+h2 {
+  color: #fdf860;
+  background-color: black;
+  text-align: center;
+  margin: 37px;
+  border-radius: 30px;
+  width: 415px;
+  height: 415px;
+  font-size: 8rem;
+  padding-top: 113px;
+}
+button {
+  font-family: "Lato", sans-serif;
+}
+p {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  display: inline-block;
+  background-color: #2c2c2c;
+  padding: 0 10px;
+  margin: -5% 0 0 35%;
+}
+section {
+  display: inline-block;
+  margin-left: 155px;
+  margin-top: 123px;
+  width: 489px;
+}
+
+/* ===============Container Styling ============== */
+.container1 {
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #97f5bb;
+  color: #fdf860;
+  margin-bottom: 7%;
+  width: 489px;
+  height: 489px;
+}
+.container2 {
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #525df4;
+  color: #fdf860;
+  margin-bottom: 7%;
+  width: 489px;
+  height: 489px;
+}
+
+/* ===============Button Styling ============== */
+.button {
+  text-align: center;
+  margin-bottom: 5%;
+}
+button:not(.default) {
+  width: 105px;
+  height: 105px;
+  border-radius: 20px;
+  color: white;
+  font-size: 2rem;
+  margin: 12.5px;
+}
+.default {
+  width: 122px;
+  height: 39px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+section:first-of-type button {
+  background-color: #97f5bb;
+}
+section:last-of-type button {
+  background-color: #525df4;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
